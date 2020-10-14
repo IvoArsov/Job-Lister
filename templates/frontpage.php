@@ -7,5 +7,53 @@
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
+  <div class="row">
+    <div class="col-md-10">
+      <h4>TItle</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+      <h4>TItle</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+      <h4>TItle</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+      <h4>TItle</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="btn btn-primary">View</a>
+    </div>
+  </div>
+  
 </div>
 <?php include "inc/footer.php"; ?>
