@@ -7,53 +7,16 @@
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
+  <?php foreach($jobs as $job): ?>
   <div class="row">
     <div class="col-md-10">
-      <h4>TItle</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
-      </p>
+      <h4><?php echo $job->job_title; ?></h4>
+      <p><?php echo $job->description; ?></p>
     </div>
     <div class="col-md-2">
       <a href="#" class="btn btn-primary">View</a>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-10">
-      <h4>TItle</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
-      </p>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="btn btn-primary">View</a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-10">
-      <h4>TItle</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
-      </p>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="btn btn-primary">View</a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-10">
-      <h4>TItle</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta atque quas assumenda voluptates tempore.
-      </p>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="btn btn-primary">View</a>
-    </div>
-  </div>
-  
+  <?php endforeach(); ?>
 </div>
 <?php include "inc/footer.php"; ?>

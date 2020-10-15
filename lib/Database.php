@@ -49,4 +49,18 @@ class Database{
         }
         $this->smtp->bindValue($param, $value, $type);       
     }
+
+    public function execute(){
+        return $this->stmt->execute();
+    }
+
+    public function resultSet(){
+        $this->execute();
+        return $this->smtm->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function single(){
+        $this->execute();
+        return $this->smtm->fetch(PDO::FETCH_OBJ);
+    }
 }
