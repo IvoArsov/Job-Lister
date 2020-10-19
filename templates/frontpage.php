@@ -1,13 +1,23 @@
 <?php include "inc/header.php"; ?>
 <div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-  <?php foreach($jobs as $job): ?>
+  <h1 class="display-4">Find a job</h1>
+  <form action="index.php" method="GET">
+    <select name="category" class="form-control">
+      <option value="0">Choose Category</option>
+      <?php foreach($categories as $category) : ?>
+        <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
+      <?php endforeach; ?>
+    </select>
+    <br/>
+    <input type="submit" class="btn btn-primary" value="FIND" />      
+  </form>
+  
+</div>
+
+<div class="col-md-6">
+  <h2><?php echo $title; ?></h2>
+  <br/>
+<?php foreach($jobs as $job): ?>
   <div class="row">
     <div class="col-md-10">
       <h4><?php echo $job->job_title; ?></h4>
@@ -17,6 +27,7 @@
       <a href="#" class="btn btn-primary">View</a>
     </div>
   </div>
-  <?php endforeach(); ?>
+  <?php endforeach;?>
 </div>
+
 <?php include "inc/footer.php"; ?>

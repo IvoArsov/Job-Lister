@@ -47,7 +47,7 @@ class Database{
                 $type = PDO::PARAM_STR;
             }
         }
-        $this->smtp->bindValue($param, $value, $type);       
+        $this->stmt->bindValue($param, $value, $type);       
     }
 
     public function execute(){
@@ -56,11 +56,11 @@ class Database{
 
     public function resultSet(){
         $this->execute();
-        return $this->smtm->fetchAll(PDO::FETCH_OBJ);
+        return $this->stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
     public function single(){
         $this->execute();
-        return $this->smtm->fetch(PDO::FETCH_OBJ);
+        return $this->stmt->fetch(PDO::FETCH_OBJ);
     }
 }
