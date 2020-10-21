@@ -1,7 +1,6 @@
 <div class="container">
   <?php include "inc/header.php"; ?>
 
-
   <div class="jumbotron">
     <div class="col-md-3">&nbsp;</div>
     <div class="col-md-6">
@@ -20,7 +19,6 @@
     <div class="col-md-3">&nbsp;</div>
   </div>
 
-
   <div class="col-md-12">
     <h2><?php echo $title; ?></h2>
     <br />
@@ -31,7 +29,7 @@
           <p><?php echo $job->description; ?></p>
         </div>
         <div class="col-md-2">
-          <a href="#" class="btn btn-outline-info">View</a>
+          <a href="job.php?id=<?php echo $job->id; ?>" class="btn btn-outline-info">View</a>
         </div>
       </div>
     <?php endforeach; ?>
