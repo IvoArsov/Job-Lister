@@ -1,5 +1,5 @@
 <?php 
-//Redirect to page 
+//Redirect to Page 
 function redirect($page = false, $message = NULL, $message_type = NULL){
     if(is_string($page)){
         $location = $page;
@@ -7,12 +7,12 @@ function redirect($page = false, $message = NULL, $message_type = NULL){
         $location = $_SERVER['SCRIPT_NAME'];
     }
 
-    //Check for messages
+    //Check for Messages
     if($message != NULL){
         $_SESSION['message'] = $message;
     }
 
-    //Check for type
+    //Check for Type
     if($message_type != NULL){
         $_SESSION['message_type'] = $message_type;
     }
@@ -22,7 +22,7 @@ function redirect($page = false, $message = NULL, $message_type = NULL){
     exit; 
 }
 
-//Display a message
+//Display a Message
 function displayMessage(){
     if(!empty($_SESSION['message'])){
 
@@ -34,7 +34,7 @@ function displayMessage(){
             //Assing Type Var
             $message_type = $_SESSION['message_type'];
 
-            //Create output
+            //Create Output
             if($message_type == 'error'){
                 echo '<div class="alert alert-danger">' . $message . '</div>';
             }else{

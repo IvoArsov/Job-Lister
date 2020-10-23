@@ -7,7 +7,7 @@ $job = new Job;
 $job_id = isset($_GET['id']) ? $_GET['id'] : null;
 
 if(isset($_POST['submit'])){
-    //Create data array
+    //Create Data Array
     $data  = array();
     $data['job_title'] = $_POST['job_title'];
     $data['company'] = $_POST['company'];

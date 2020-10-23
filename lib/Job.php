@@ -8,7 +8,7 @@ class Job
         $this->db = new Database;
     }
 
-    //Get all jobs
+    //Get all Jobs
     public function getAllJobs()
     {
         $this->db->query("SELECT jobs.*, categories.name AS cname 
@@ -23,7 +23,7 @@ class Job
         return $results;
     }
 
-    //Get categories
+    //Get Categories
     public function getCategories()
     {
         $this->db->query("SELECT * FROM categories");

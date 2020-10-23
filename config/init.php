@@ -1,14 +1,14 @@
 <?php
-//Session start
+//Session Start
 session_start();
 
-//Config file
+//Config File
 require_once "config.php";
 
-//Include helpers
+//Include Helpers
 require_once "helpers/system_helper.php";
 
-//Auto loader
+//Auto Loader
 function __autoload($class_name){
     require_once "lib/$class_name.php";
 }
